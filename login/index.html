@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--로그인 화면-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial">
+	<link rel="styleSheet" href="login.css">
+</head>
+
+<body>
+	<form>
+		<label for="title">Webgate 출하 지원</label>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username"><br><br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+		<input type="submit" id="login" value="Login" onsubmit="loadScript()">
+		<a href="C:\Users\영업지원\Desktop\dev_pyo\home\home.html">홈 화면으로 이동</a>
+	</form>
+
+	<script>
+		var username = document.getElementById('username');
+		var password = document.getElementById('password');
+		var loginSubmit = document.getElementById('login');
+		loginSubmit.addEventListener('click', function () {
+			// login input test
+			alert("...");
+			if (username.textContent == "abcd") {
+				alert("username = abcd");
+			} else {
+				alert("username != abcd");
+			}
+			if (password.textContent == "1234") {
+				alert("password = 1234");
+			} else {
+				alert("password != 1234");
+			}
+			if (username.textContent == "abcd" && password.textContent == "1234") {
+				alert("로그인 성공");
+			}
+			else {
+				alert(",,,");
+			}
+		})
+
+		function loadScript() {
+			alert(",,,")
+			var script = document.createElement('script');
+			script.src = 'login.js';
+			document.body.appendChild(script);
+		}
+	</script>
+</body>
+
+</html>

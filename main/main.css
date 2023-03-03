@@ -1,0 +1,40 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+button{
+    margin: 5px;
+    text-align: center;
+    font-weight: 550;
+}
+
+.webgate__logo {
+    background-image: url("webgate.png");
+    background-size: cover; /* 배경 이미지 크기를 커버하는 크기로 설정합니다. */
+    background-position: center; /* 배경 이미지를 가운데로 정렬합니다. */
+    background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다. */
+} 
+ 
+.webgate {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #00b4e4;
+    padding: 8px 12px;
+    font-weight: 550;
+ }
+.input {
+    margin: auto;
+    text-align: center;
+    font-weight: 550;
+}
+.btn_today {
+    text-align: center;
+    font-weight: 550;
+}
